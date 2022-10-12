@@ -1,0 +1,13 @@
+:root {
+    --dark-blue: #00083b;
+    --red: #F24C57;
+    --grey: #A3A6B4;
+    --red-gradient: linear-gradient(135deg, var(--red), #F24CA5);
+    --blue-gradient: linear-gradient(135deg, var(--dark-blue), #041168);
+    --light-mcol-gradient: linear-gradient(135deg, #FC0011, #6953FE, #FC0011);
+    --showcase-gradient: linear-gradient(135deg, #FC0011, #6953FE);
+    --mcol-gradient: linear-gradient(135deg, var(--red), #1800BC);
+    --red-box-shadow: 0 0 15px var(--red);
+    --red-box-shadow-down: 0 5px 20px var(--red);
+    --font-family: 'Montserrat', 'Roboto', sans-serif;
+}

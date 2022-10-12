@@ -1,0 +1,14 @@
+#error404::before {
+    background-image: url(../assets/3d/house.png);
+}
+
+#astronaut-404 {
+    left: 43%;
+    transform: translateX(-50%);
+}
+
+.full-page {
+    .cta_container a {
+        padding-left: 7rem;
+    }
+}

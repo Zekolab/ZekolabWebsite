@@ -1,0 +1,42 @@
+/* Landscape phones and down */
+@mixin xs {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@mixin sm {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@mixin md {
+  @media (min-width: 768px) and (max-width: 979px) {
+    @content;
+  }
+}
+
+/* Portrait laptop to large desktop */
+@mixin l {
+  @media (min-width: 980px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+/* Large desktop */
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+/* === HERO CHANGING BACKGROUND === */
+/* Portrait tablet to landscape and desktop */
+@mixin md-hp {
+  @media (max-width: 900px) {
+    @content;
+  }
+}

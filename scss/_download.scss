@@ -1,0 +1,111 @@
+.download {
+    width: 100vw;
+    height: 100vh;
+    background: var(--mcol-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > a {
+        align-items: center;
+        margin-bottom: 2.5rem;
+        font-weight: 700;
+        font-size: 4rem;
+        font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: #FFF;
+        img {
+            width: 7rem;
+            margin-right: 1.6rem;
+        }
+        z-index: 1;
+        @include sm {
+            width: 25rem;
+        }
+    }
+    h1 {
+        width: 65%;
+        font-size: 5rem;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        // position: relative;
+        z-index: 1;
+        @include sm {
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
+        span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .4s, transform .4s;
+        }
+    }
+    & > a {
+        opacity: 0;
+        transition: opacity .4s;
+    }
+    & > img {
+        opacity: 0;
+        transition: opacity .4s;
+        position: absolute;
+        z-index: 0;
+
+        &#globe {
+            width: 15rem;
+            top: 15rem;
+            left: 10vw;
+            animation: animate-rotate 2s infinite alternate-reverse linear;
+            @media (max-width: 1000px) {
+                width: 12rem;
+            }
+            @include xs {
+                top: 1.5rem;
+                left: 30vw;
+            }
+        }
+        &#astronaut {
+            width: 25rem;
+            bottom: 12rem;
+            right: 7vw;
+            animation: animate-up 2s infinite alternate-reverse;
+            @media (max-width: 1000px) {
+                width: 16rem;
+            }
+            @include xs {
+                bottom: 8rem;
+                right: 2rem;
+            }
+        }
+    }
+
+    .ctas_store {
+        opacity: 0;
+        transition: opacity .4s;
+        .play-store::before {
+            background-image: url(../assets/SVG/icon_play-store.svg);
+        }
+        .app-store {
+            &::before {
+                background-image: url(../assets/SVG/icon_app-store.svg);
+            }
+        }
+    }
+}
+
+@keyframes animate-rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes animate-up {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(-20px);
+    }
+}

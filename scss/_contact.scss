@@ -1,0 +1,65 @@
+.full-page {
+    height: 100vh;
+    background: var(--mcol-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        width: 70%;
+        font-size: 4.5rem;
+        color: #FFF;
+        text-align: center;
+        margin-top: 5rem;
+        position: relative;
+        z-index: 1;
+        @include sm {
+            width: 85%;
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-top: 0;
+        }
+    }
+
+    .img-top-left {
+        position: absolute;
+        width: 20rem;
+        top: 10rem;
+        right: 7vw;
+        animation: animate-rotate 2s infinite alternate-reverse linear;
+        @media (max-width: 1000px) {
+            width: 16rem;
+        }
+        @include xs {
+            top: 10rem;
+            right: 10vw;
+        }
+    }
+
+    .cta_container a:first-child {
+        margin-right: 0;
+        @include sm {
+            margin: 0 auto;
+        }
+    }
+
+    .cta-with-icon::before {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #contact::before {
+        background-image: url(../assets/3d/letter.png);
+    }
+
+    #demo {
+        margin-left: 3rem;
+        &::before {
+            background-image: url(../assets/3d/shining-star.png);
+        }
+        @include sm {
+            margin: 0 auto;
+        }
+    }
+}

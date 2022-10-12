@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.523" y1="0.751" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f24c57"/>
+      <stop offset="1" stop-color="#1800bc"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Icon_ionic-ios-quote" data-name="Icon ionic-ios-quote" transform="translate(50 50) rotate(180)">
+    <path id="Tracé_32" data-name="Tracé 32" d="M17,0H7.221A7.385,7.385,0,0,0,0,7.5V27.491a7.385,7.385,0,0,0,7.221,7.5h5.822a1.238,1.238,0,0,1,1.2,1.343A19.4,19.4,0,0,1,9.538,47.907,1.256,1.256,0,0,0,10.426,50h6a1.154,1.154,0,0,0,.948-.484c1.113-1.5,4.288-6.5,4.288-14.667V4.858A4.65,4.65,0,0,0,17,0Z" transform="translate(0)" fill="url(#linear-gradient)"/>
+    <path id="Tracé_33" data-name="Tracé 33" d="M17,0H7.221A7.385,7.385,0,0,0,0,7.5V27.491a7.385,7.385,0,0,0,7.221,7.5h5.822a1.238,1.238,0,0,1,1.2,1.343A19.4,19.4,0,0,1,9.538,47.907,1.256,1.256,0,0,0,10.426,50h6a1.154,1.154,0,0,0,.948-.484c1.113-1.5,4.288-6.5,4.288-14.667V4.858A4.65,4.65,0,0,0,17,0Z" transform="translate(28.336)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

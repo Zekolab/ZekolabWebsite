@@ -1,0 +1,149 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    @include sm {
+        max-width: 720px;
+    }
+    @include md {
+        max-width: 850px;
+    }
+    @include l {
+        max-width: 1050px;
+    }
+    @include xl {
+        max-width: 1150px;
+    }
+}
+
+/* === FLEX === */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* === SPACES === */
+.around {
+    justify-content: space-around;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.evenly {
+    justify-content: space-evenly;
+}
+
+.al-center {
+    align-items: center;
+}
+
+/* === BUTTONS === */
+.btn {
+    color: #FFF;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.7rem;
+    &_container {
+        height: 50px;
+        border-radius: 30px;
+        text-align: center;
+        padding-top: 1.2rem;
+        @include sm {
+            padding-top: 1.3rem;
+        }
+        @include md {
+            width: 250px;
+            padding-top: 1.5rem;
+        }
+        @include l {
+            width: 250px;
+            padding-top: 1.5rem;
+        }
+        @include xl {
+            width: 325px;
+        }
+    }
+    &-red {
+        background-image: var(--red-gradient);
+        box-shadow: var(--red-box-shadow);
+        transition: all .3s ease-in-out;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--red-box-shadow-down);
+        }
+    }
+    @include xl {
+        font-size: 2rem;
+    }
+
+}
+
+/* === CLASSES === */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.d-none {
+    display: none;
+}
+
+.cta_container {
+    color: #FFF;
+    font-weight: 600;
+    margin-top: 5rem;
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    a {
+        background-color: var(--dark-blue);
+        padding: 2rem 2rem 2rem 6rem;
+        border-radius: 5rem;
+        position: relative;
+        @include sm {
+            text-align: center;
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: transparent no-repeat center;
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2rem;
+        }
+    }
+    a:first-child {
+        margin-right: 5rem;
+        @include sm {
+            margin: 0 auto;
+        }
+        img {
+            width: 3rem;
+            height: auto;
+        }
+    }
+}
+
+.showcase {
+    background: var(--showcase-gradient);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

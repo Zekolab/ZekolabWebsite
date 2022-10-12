@@ -1,0 +1,21 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 15 | /         @include sm {
+ * 16 | |             width: 85%;
+ * 17 | |             font-size: 2rem;
+ * 18 | |             line-height: 3rem;
+ * 19 | |             margin-top: 0;
+ * 20 | \         }
+ *    '
+ *   scss\contact.scss 15:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 15 \2502  \250c          @include sm {\a 16 \2502  \2502              width: 85%;\a 17 \2502  \2502              font-size: 2rem;\a 18 \2502  \2502              line-height: 3rem;\a 19 \2502  \2502              margin-top: 0;\a 20 \2502  \2514          }\a    \2575 \a   scss\\contact.scss 15:9  root stylesheet";
+}
