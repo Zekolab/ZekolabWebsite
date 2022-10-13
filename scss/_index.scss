@@ -94,9 +94,13 @@
     .float-hero-planet {
         position: absolute;
         right: 25%;
-        width: 18rem;
+        width: 12rem;
         bottom: 0;
         transform: translateY(50%);
+        @include sm {
+            // display: none;
+            width: 10rem;
+        }
     }
 }
 

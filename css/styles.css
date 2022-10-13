@@ -271,9 +271,21 @@ p, h1, h2, h3, h4, h5, h6 {
 .go img {
   position: absolute;
   left: 10rem;
-  width: 15rem;
+  width: 12rem;
   bottom: 0;
-  transform: translateY(7px);
+  transform: translateY(6px);
+}
+@media (max-width: 767px) {
+  .go img {
+    width: 9rem;
+    left: 6rem;
+    transform: translateY(4px);
+  }
+}
+@media (max-width: 480px) {
+  .go img {
+    display: none;
+  }
 }
 
 /* === FEEDBACKS === */
@@ -946,9 +958,14 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .hero .float-hero-planet {
   position: absolute;
   right: 25%;
-  width: 18rem;
+  width: 12rem;
   bottom: 0;
   transform: translateY(50%);
+}
+@media (max-width: 767px) {
+  .hero .float-hero-planet {
+    width: 10rem;
+  }
 }
 
 /* === BADGES STORES === */
@@ -1022,10 +1039,18 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   }
   .marques .hero .img-float {
     position: absolute;
-    width: 18rem;
+    width: 10rem;
     bottom: 0;
-    left: 8rem;
+    left: 10rem;
     transform: translateY(50%);
+  }
+  .marques .hero .img-float.comet-reverse {
+    transform: scaleX(-1) translateY(50%);
+  }
+}
+@media (min-width: 900px) and (max-width: 767px) {
+  .marques .hero .img-float {
+    display: none;
   }
 }
 @media (max-width: 767px) {

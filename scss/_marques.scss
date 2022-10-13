@@ -15,10 +15,16 @@
             }
             .img-float {
                 position: absolute;
-                width: 18rem;
+                width: 10rem;
                 bottom: 0;
-                left: 8rem;
+                left: 10rem;
                 transform: translateY(50%);
+                &.comet-reverse {
+                    transform: scaleX(-1) translateY(50%);
+                }
+                @include sm {
+                    display: none;
+                }
             }
         }
     }

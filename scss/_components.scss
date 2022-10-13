@@ -71,9 +71,17 @@
     img {
         position: absolute;
         left: 10rem;
-        width: 15rem;
+        width: 12rem;
         bottom: 0;
-        transform: translateY(7px);
+        transform: translateY(6px);
+        @include sm {
+            width: 9rem;
+            left: 6rem;
+            transform: translateY(4px);
+        }
+        @include xs {
+            display: none;
+        }
     }
 }
 
