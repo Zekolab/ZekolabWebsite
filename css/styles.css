@@ -1037,21 +1037,6 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   .marques .hero_right {
     width: 35%;
   }
-  .marques .hero .img-float {
-    position: absolute;
-    width: 10rem;
-    bottom: 0;
-    left: 10rem;
-    transform: translateY(50%);
-  }
-  .marques .hero .img-float.comet-reverse {
-    transform: scaleX(-1) translateY(50%);
-  }
-}
-@media (min-width: 900px) and (max-width: 767px) {
-  .marques .hero .img-float {
-    display: none;
-  }
 }
 @media (max-width: 767px) {
   .marques .hero_right {
@@ -1059,6 +1044,16 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     width: 65%;
     margin: 3rem auto;
   }
+}
+.marques .img-float {
+  position: absolute;
+  width: 10rem;
+  bottom: 0;
+  left: 10rem;
+  transform: translateY(50%);
+}
+.marques .img-float.comet-reverse {
+  transform: scaleX(-1) translateY(50%);
 }
 
 .campain h2 {

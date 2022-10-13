@@ -13,19 +13,6 @@
             &_right {
                 width: 35%;
             }
-            .img-float {
-                position: absolute;
-                width: 10rem;
-                bottom: 0;
-                left: 10rem;
-                transform: translateY(50%);
-                &.comet-reverse {
-                    transform: scaleX(-1) translateY(50%);
-                }
-                @include sm {
-                    display: none;
-                }
-            }
         }
     }
 
@@ -34,6 +21,17 @@
             max-width: 250px;
             width: 65%;
             margin: 3rem auto;
+        }
+    }
+
+    .img-float {
+        position: absolute;
+        width: 10rem;
+        bottom: 0;
+        left: 10rem;
+        transform: translateY(50%);
+        &.comet-reverse {
+            transform: scaleX(-1) translateY(50%);
         }
     }
 }
