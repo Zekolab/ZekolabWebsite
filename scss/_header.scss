@@ -18,6 +18,24 @@ header {
         }
     }
 
+    //     position: fixed;
+    //     top: -1px;
+    //     padding: 1.5rem 0;
+    //     background-color: rgba($color: #00083b, $alpha: 0.8);
+    //     padding-left: 1.6rem;
+    //     padding-right: 1.6rem;
+    //     z-index: 1000;
+    //     width: 100%;
+
+    
+    // @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    //     header {
+    //         background-color: rgba($color: #00083b, $alpha: 0.5);
+    //         backdrop-filter: blur(8px);
+    //         -webkit-backdrop-filter: blur(8px);
+    //     }
+    // }
+
     &.static {
         position: static;
         background-color: var(--dark-blue);

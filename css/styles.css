@@ -1134,7 +1134,6 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .campain .catchup-showcase {
   font-weight: 700;
   position: relative;
-  mix-blend-mode: difference;
 }
 .campain .catchup-showcase::after {
   content: "";
