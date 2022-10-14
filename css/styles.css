@@ -1333,7 +1333,8 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 @media (max-width: 767px) {
   .full-page #demo {
-    margin: 0 auto; 
+    margin: 0 auto;
+  }
 }
 
 #error404::before {
