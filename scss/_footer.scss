@@ -3,14 +3,16 @@
     background-color: var(--dark-blue);
     position: relative;
     z-index: 0;
-    padding: 5rem 0 0;
+    padding-top: 3rem;
 
     .top {
-        // margin-bottom: 5rem;
         align-items: center;
         @include sm {
             flex-direction: column;
             margin-bottom: 2rem;
+        }
+        &>div {
+            margin-bottom: -2rem;
         }
     }
 
@@ -56,8 +58,7 @@
     }
 
     .socials {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin: 1.5rem auto;
         column-gap: 1.5rem;
         justify-content: center;
         img {
@@ -145,7 +146,7 @@
         top: 2rem;
         left: 50%;
         transform: translateX(-50%);
-        width: 15rem;
+        width: 12rem;
         height: auto;
         z-index: 1;
         @include sm {
@@ -155,7 +156,7 @@
 
     .bottom {
         border-top: 1px solid #FFF;
-        padding: 1.6rem 0;
+        padding: 1rem 0;
         font-size: 1.2rem;
         @include sm {
             flex-direction: column;
