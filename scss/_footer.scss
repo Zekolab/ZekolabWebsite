@@ -6,7 +6,7 @@
     padding: 5rem 0 0;
 
     .top {
-        margin-bottom: 5rem;
+        // margin-bottom: 5rem;
         align-items: center;
         @include sm {
             flex-direction: column;
@@ -52,14 +52,21 @@
                 align-items: center;
                 row-gap: 2rem;
             }
-            // @include sm {
-            //     column-gap: 3rem;
-            // }
-            // @include xs {
-            //     flex-direction: column;
-            //     align-items: center;
-            //     row-gap: 2rem;
-            // }
+        }
+    }
+
+    .socials {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        column-gap: 1.5rem;
+        justify-content: center;
+        img {
+            width: 2.5rem;
+            height: auto;
+        }
+        @include sm {
+            padding-left: 0;
+            margin: 3rem auto 3rem;
         }
     }
 
@@ -131,32 +138,14 @@
                 }
             }
         }
-
-        .socials {
-            margin-top: 3rem;
-            margin-left: auto;
-            column-gap: 1.5rem;
-            img {
-                width: 3rem;
-                height: auto;
-                &#logo-twitter {
-                    width: 3.5rem;
-                }
-            }
-            @include sm {
-                // justify-content: center;
-                padding-left: 0;
-                margin: 3rem auto 0;
-            }
-        }
     }
 
-    .astronaut-star {
+    .astronaut-flying {
         position: absolute;
-        bottom: 0;
+        top: 2rem;
         left: 50%;
         transform: translateX(-50%);
-        width: 20rem;
+        width: 15rem;
         height: auto;
         z-index: 1;
         @include sm {
@@ -180,10 +169,7 @@
         }
         &-right {
             row-gap: 1.6rem;
-            @include sm {
-                flex-direction: column;
-                align-items: center;
-            }
+            text-align: center;
         }
     }
 }

@@ -541,6 +541,24 @@ header.static {
   position: static;
   background-color: var(--dark-blue);
 }
+header ul > li {
+  position: relative;
+}
+header ul > li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  background-image: var(--mcol-gradient);
+  transition: width 0.2s ease-in-out;
+}
+header ul > li:hover::before {
+  width: 100%;
+}
 @media (min-width: 900px) {
   header ul {
     display: flex;
@@ -674,7 +692,6 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   padding: 5rem 0 0;
 }
 .footer .top {
-  margin-bottom: 5rem;
   align-items: center;
 }
 @media (max-width: 767px) {
@@ -726,6 +743,22 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     flex-direction: column;
     align-items: center;
     row-gap: 2rem;
+  }
+}
+.footer .socials {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  column-gap: 1.5rem;
+  justify-content: center;
+}
+.footer .socials img {
+  width: 2.5rem;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .footer .socials {
+    padding-left: 0;
+    margin: 3rem auto 3rem;
   }
 }
 .footer .right {
@@ -795,35 +828,17 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .footer .right .cta-container:hover::before {
   background-position: right;
 }
-.footer .right .socials {
-  margin-top: 3rem;
-  margin-left: auto;
-  column-gap: 1.5rem;
-}
-.footer .right .socials img {
-  width: 3rem;
-  height: auto;
-}
-.footer .right .socials img#logo-twitter {
-  width: 3.5rem;
-}
-@media (max-width: 767px) {
-  .footer .right .socials {
-    padding-left: 0;
-    margin: 3rem auto 0;
-  }
-}
-.footer .astronaut-star {
+.footer .astronaut-flying {
   position: absolute;
-  bottom: 0;
+  top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 20rem;
+  width: 15rem;
   height: auto;
   z-index: 1;
 }
 @media (max-width: 767px) {
-  .footer .astronaut-star {
+  .footer .astronaut-flying {
     display: none;
   }
 }
@@ -846,12 +861,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 .footer .bottom-right {
   row-gap: 1.6rem;
-}
-@media (max-width: 767px) {
-  .footer .bottom-right {
-    flex-direction: column;
-    align-items: center;
-  }
+  text-align: center;
 }
 
 .half-block {
