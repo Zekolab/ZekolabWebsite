@@ -11,7 +11,7 @@
         text-align: center;
         position: relative;
         display: inline-block;
-        margin-bottom: 9rem;
+        margin-bottom: 3rem;
         &::before {
             content: "";
             display: block;
@@ -241,7 +241,7 @@
 /* === FAQ === */
 .faq {
     padding: 3rem 2rem 3rem;
-    margin-top: 75px;
+    margin-top: 3rem;
     position: relative;
     .telescope-icon {
         position: absolute;

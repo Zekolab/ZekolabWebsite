@@ -29,7 +29,7 @@
         right: 7vw;
         animation: animate-rotate 2s infinite alternate-reverse linear;
         @media (max-width: 1000px) {
-            width: 16rem;
+            width: 12rem;
         }
         @include xs {
             top: 10rem;

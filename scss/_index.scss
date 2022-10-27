@@ -130,13 +130,13 @@
 
 /* === FEATURES === */
 .features {
-    padding: 8rem 0;
+    padding: 8rem 0 5rem;
 
     &_block {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 5rem;
-        align-items: center;
+        align-items: flex-start;
         justify-items: center;
 
         @include md-hp {

@@ -216,7 +216,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   position: relative;
   display: inline-block;
-  margin-bottom: 9rem;
+  margin-bottom: 3rem;
 }
 .title-big::before {
   content: "";
@@ -430,7 +430,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* === FAQ === */
 .faq {
   padding: 3rem 2rem 3rem;
-  margin-top: 75px;
+  margin-top: 3rem;
   position: relative;
 }
 .faq .telescope-icon {
@@ -528,7 +528,7 @@ header {
   -webkit-backdrop-filter: blur(8px);
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-  z-index: 1000000000000000000000000;
+  z-index: 10000;
   width: 100%;
   /* if backdrop support: blurred */
 }
@@ -748,6 +748,11 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     row-gap: 2rem;
   }
 }
+@media (max-width: 767px) {
+  .footer .left .footer_nav {
+    margin: 2rem 0;
+  }
+}
 .footer .socials {
   margin: 1.5rem auto;
   column-gap: 1.5rem;
@@ -846,7 +851,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 .footer .bottom {
   border-top: 1px solid #FFF;
-  padding: 1rem 0;
+  padding: 1.6rem 0;
   font-size: 1.2rem;
 }
 @media (max-width: 767px) {
@@ -1003,13 +1008,13 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 
 /* === FEATURES === */
 .features {
-  padding: 8rem 0;
+  padding: 8rem 0 5rem;
 }
 .features_block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 5rem;
-  align-items: center;
+  align-items: flex-start;
   justify-items: center;
 }
 @media (max-width: 900px) {
@@ -1143,6 +1148,16 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   margin: 5rem auto 7rem;
   width: fit-content;
 }
+@media only screen and (max-width: 680px) {
+  .campain .catchup > p:first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .campain .catchup-showcase {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .campain .catchup-showcase {
   font-weight: 700;
   position: relative;
@@ -1184,7 +1199,13 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   margin-right: 1.6rem;
 }
 @media (max-width: 767px) {
+  .download > a img {
+    width: 5rem;
+  }
+}
+@media (max-width: 767px) {
   .download > a {
+    font-size: 3.5rem;
     width: 25rem;
   }
 }
@@ -1200,6 +1221,11 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   .download h1 {
     font-size: 3.5rem;
     line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .download h1 {
+    font-size: 3rem;
   }
 }
 .download h1 span {
@@ -1226,13 +1252,13 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 @media (max-width: 1000px) {
   .download > img#globe {
-    width: 12rem;
+    width: 10rem;
   }
 }
 @media (max-width: 480px) {
   .download > img#globe {
-    top: 1.5rem;
-    left: 30vw;
+    top: 2.5rem;
+    left: 10vw;
   }
 }
 .download > img#astronaut {
@@ -1313,7 +1339,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 @media (max-width: 1000px) {
   .full-page .img-top-left {
-    width: 16rem;
+    width: 12rem;
   }
 }
 @media (max-width: 480px) {

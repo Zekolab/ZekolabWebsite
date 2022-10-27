@@ -17,9 +17,13 @@
         img {
             width: 7rem;
             margin-right: 1.6rem;
+            @include sm {
+                width: 5rem;
+            }
         }
         z-index: 1;
         @include sm {
+            font-size: 3.5rem;
             width: 25rem;
         }
     }
@@ -34,6 +38,9 @@
         @include sm {
             font-size: 3.5rem;
             line-height: 4rem;
+        }
+        @include xs {
+            font-size: 3rem;
         }
         span {
             display: inline-block;
@@ -58,11 +65,11 @@
             left: 10vw;
             animation: animate-rotate 2s infinite alternate-reverse linear;
             @media (max-width: 1000px) {
-                width: 12rem;
+                width: 10rem;
             }
             @include xs {
-                top: 1.5rem;
-                left: 30vw;
+                top: 2.5rem;
+                left: 10vw;
             }
         }
         &#astronaut {
