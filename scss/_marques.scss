@@ -26,12 +26,15 @@
 
     .img-float {
         position: absolute;
-        width: 10rem;
+        width: 9rem;
         bottom: 0;
         left: 10rem;
         transform: translateY(50%);
         &.comet-reverse {
             transform: scaleX(-1) translateY(50%);
+        }
+        @include sm {
+            width: 7rem;
         }
     }
 }
