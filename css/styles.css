@@ -197,6 +197,11 @@ p, h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
+.available-soon {
+  font-size: 0.75em;
+  font-style: italic;
+}
+
 .showcase {
   background: var(--showcase-gradient);
   background-clip: border-box;
