@@ -5,6 +5,7 @@
         padding-left: 1.6rem;
         padding-right: 1.6rem;
     }
+
     &-big {
         color: var(--dark-blue);
         font-size: 5rem;
@@ -12,6 +13,7 @@
         position: relative;
         display: inline-block;
         margin-bottom: 3rem;
+
         &::before {
             content: "";
             display: block;
@@ -25,6 +27,7 @@
             left: 0;
             z-index: -1;
         }
+
         @include sm {
             font-size: 3.5rem;
             line-height: 4.5rem;
@@ -67,18 +70,20 @@
             width: fit-content !important;
         }
     }
-    
+
     img {
         position: absolute;
         left: 10rem;
         width: 12rem;
         bottom: 0;
         transform: translateY(6px);
+
         @include sm {
             width: 9rem;
             left: 6rem;
             transform: translateY(4px);
         }
+
         @include xs {
             display: none;
         }
@@ -151,6 +156,7 @@
     padding: 3rem 2rem 3rem;
     margin-top: 3rem;
     position: relative;
+
     .telescope-icon {
         position: absolute;
         bottom: -1.3rem;
@@ -159,20 +165,25 @@
         filter: opacity(.25);
         height: 50rem;
         width: auto;
+
         @include sm {
             width: 75%;
             height: auto;
         }
+
         @include xs {
             display: none;
         }
     }
+
     h1 {
         text-align: center;
     }
+
     &_title {
         padding-bottom: 2rem;
     }
+
     .questions {
         border-bottom: 1px solid hsl(240, 5%, 91%);
 
@@ -180,11 +191,13 @@
             h2 {
                 font-weight: 700;
             }
+
             img {
                 transform: rotate(180deg) !important;
             }
+
             .invisible-panel {
-                max-height: 150px;
+                max-height: 280px;
                 margin-bottom: 2rem;
             }
         }
@@ -215,6 +228,34 @@
             max-height: 0;
             overflow: hidden;
             transition: all .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+        }
+    }
+}
+
+// Table Of Contents
+.toc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 40%;
+    padding: 2.5rem;
+    border: 1px solid red;
+    margin: 4rem 0 6rem;
+    &-container {
+        margin-top: 15rem;
+        h3 {
+            font-weight: 600;
+            padding-left: 2rem;
+        }
+    }
+    .parag {
+        &-title {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        &-subtitle {
+            padding-left: 2rem;
+            font-weight: 600;
         }
     }
 }

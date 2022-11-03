@@ -98,11 +98,11 @@ header {
 
     .navbar {
         color: #FFF;
-        text-transform: uppercase;
         font-size: 1.75rem;
 
         &_content {
             width: 65%;
+            text-transform: uppercase;
 
             @include md-hp {
                 display: none;
@@ -161,7 +161,8 @@ header {
             cursor: pointer;
 
             position: absolute;
-            top: 1.75rem;
+            top: 50%;
+            transform: translateY(-50%);
             right: 1.75rem;
             z-index: 10000;
 
