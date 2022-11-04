@@ -429,6 +429,11 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   margin: 4rem 0 6rem;
 }
+@media (max-width: 767px) {
+  .legals .toc {
+    width: 100%;
+  }
+}
 .legals .toc h3 {
   font-weight: 600;
   padding-left: 2rem;

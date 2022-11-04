@@ -244,6 +244,9 @@
         border: 2px solid var(--red);
         border-radius: 5px;
         margin: 4rem 0 6rem;
+        @include sm {
+            width: 100%;
+        }
         h3 {
             font-weight: 600;
             padding-left: 2rem;
