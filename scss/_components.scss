@@ -232,30 +232,62 @@
     }
 }
 
-// Table Of Contents
-.toc {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    width: 40%;
-    padding: 2.5rem;
-    border: 1px solid red;
-    margin: 4rem 0 6rem;
-    &-container {
-        margin-top: 15rem;
+// LEGALS
+.legals {
+    margin-top: 15rem;
+    .toc {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 40%;
+        padding: 2.5rem;
+        border: 2px solid var(--red);
+        border-radius: 5px;
+        margin: 4rem 0 6rem;
         h3 {
             font-weight: 600;
             padding-left: 2rem;
         }
-    }
-    .parag {
-        &-title {
-            font-size: 2rem;
-            font-weight: 700;
+        .parag {
+            &-title {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            &-subtitle {
+                padding-left: 2rem;
+                font-weight: 600;
+            }
         }
-        &-subtitle {
-            padding-left: 2rem;
-            font-weight: 600;
+    }
+    .details {
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+    .address {
+        padding-left: 5rem;
+    }
+    h2 {
+        padding-left: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 1.6rem;
+    }
+    p {
+        margin-bottom: 1.6rem;
+        a {
+            color: #1800BC;
+            text-decoration: underline;
+        }
+    }
+    .ipt {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    ul {
+        margin-bottom: 2rem;
+        li {
+            list-style-type: disc;
+            margin-left: 8rem;
         }
     }
 }
