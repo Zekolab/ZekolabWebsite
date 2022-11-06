@@ -423,9 +423,9 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  width: 40%;
+  width: 75%;
   padding: 2.5rem;
-  border: 2px solid var(--red);
+  border: 1px solid var(--red);
   border-radius: 5px;
   margin: 4rem 0 6rem;
 }
@@ -439,7 +439,10 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-left: 2rem;
 }
 .legals .toc .parag-title {
-  font-size: 2rem;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+.legals .toc .parag-title:hover {
   font-weight: 700;
 }
 .legals .toc .parag-subtitle {
@@ -842,20 +845,11 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   font-size: 1.2rem;
 }
 @media (max-width: 767px) {
-  .footer .bottom {
+  .footer .bottom .container {
     flex-direction: column;
     text-align: center;
-  }
-  .footer .bottom-left {
     row-gap: 1.6rem;
-    margin-bottom: 1.6rem;
-    flex-direction: column;
-    align-items: center;
   }
-}
-.footer .bottom-right {
-  row-gap: 1.6rem;
-  text-align: center;
 }
 
 .half-block {
