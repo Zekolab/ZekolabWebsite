@@ -469,6 +469,9 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #1800BC;
   text-decoration: underline;
 }
+.legals p:last-child {
+  margin-bottom: 5rem;
+}
 .legals .ipt {
   font-weight: 700;
   text-decoration: underline;

@@ -284,6 +284,9 @@
             color: #1800BC;
             text-decoration: underline;
         }
+        &:last-child {
+            margin-bottom: 5rem;
+        }
     }
     .ipt {
         font-weight: 700;
