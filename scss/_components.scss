@@ -74,13 +74,13 @@
     img {
         position: absolute;
         left: 10rem;
-        width: 12rem;
+        width: 10rem;
         bottom: 0;
         transform: translateY(6px);
 
         @include sm {
             width: 9rem;
-            left: 6rem;
+            left: 6rem; 
             transform: translateY(4px);
         }
 
@@ -104,8 +104,8 @@
             display: block;
             position: absolute;
 
-            width: 9rem;
-            height: 9rem;
+            width: 8rem;
+            height: 8rem;
             background: transparent url(../assets/3d/rocket.png) no-repeat center;
             background-size: contain;
             top: -10rem;
@@ -120,8 +120,8 @@
 
             @include xs {
                 left: 50%;
-                transform: translateX(-50%) scale(-1.2, 1.2);
-                top: -11rem;
+                transform: translateX(-50%) scale(-1.1, 1.1);
+                top: -10rem;
             }
         }
     }

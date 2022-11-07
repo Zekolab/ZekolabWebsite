@@ -272,7 +272,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .go img {
   position: absolute;
   left: 10rem;
-  width: 12rem;
+  width: 10rem;
   bottom: 0;
   transform: translateY(6px);
 }
@@ -302,8 +302,8 @@ p, h1, h2, h3, h4, h5, h6 {
   content: "";
   display: block;
   position: absolute;
-  width: 9rem;
-  height: 9rem;
+  width: 8rem;
+  height: 8rem;
   background: transparent url(../assets/3d/rocket.png) no-repeat center;
   background-size: contain;
   top: -10rem;
@@ -320,8 +320,8 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
   .level-up > div::after {
     left: 50%;
-    transform: translateX(-50%) scale(-1.2, 1.2);
-    top: -11rem;
+    transform: translateX(-50%) scale(-1.1, 1.1);
+    top: -10rem;
   }
 }
 .level-up h2 {
@@ -722,7 +722,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 .footer .left .logo p {
   font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 26.25px;
   font-weight: 700;
   font-style: italic;
 }
@@ -863,6 +863,10 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 
 /* === HERO === */
+.hp .badge_container {
+  padding-bottom: 6rem;
+}
+
 .hero {
   background-color: var(--dark-blue);
   position: relative;
@@ -915,7 +919,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   }
 }
 .hero-content {
-  padding-top: 11rem;
+  padding-top: 9rem;
 }
 @media (max-width: 767px) {
   .hero-content {
@@ -958,7 +962,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .hero .float-hero-planet {
   position: absolute;
   right: 25%;
-  width: 9rem;
+  width: 10rem;
   bottom: 0;
   transform: translateY(50%);
 }
@@ -999,6 +1003,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   grid-row-gap: 5rem;
   align-items: flex-start;
   justify-items: center;
+  margin-top: 3rem;
 }
 @media (max-width: 900px) {
   .features_block {
@@ -1041,13 +1046,13 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 @media (max-width: 767px) {
   .marques .hero_right {
     max-width: 250px;
-    width: 65%;
+    width: 85%;
     margin: 3rem auto;
   }
 }
 .marques .img-float {
   position: absolute;
-  width: 9rem;
+  width: 10rem;
   bottom: 0;
   left: 10rem;
   transform: translateY(50%);
@@ -1130,7 +1135,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   margin-right: 0;
 }
 .campain .catchup {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   text-align: center;
   margin: 5rem auto 7rem;
@@ -1176,7 +1181,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   align-items: center;
   margin-bottom: 2.5rem;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
   font-style: italic;
   justify-content: center;
@@ -1321,7 +1326,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 .full-page .img-top-left {
   position: absolute;
-  width: 20rem;
+  width: 17rem;
   top: 10rem;
   right: 7vw;
   animation: animate-rotate 2s infinite alternate-reverse linear;
