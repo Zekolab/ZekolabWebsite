@@ -19,14 +19,14 @@
     @include sm {
         .hero_right {
             max-width: 250px;
-            width: 85%;
+            width: 65%;
             margin: 3rem auto;
         }
     }
 
     .img-float {
         position: absolute;
-        width: 10rem;
+        width: 9rem;
         bottom: 0;
         left: 10rem;
         transform: translateY(50%);
@@ -85,10 +85,10 @@
             width: 48%;
 
             @include sm {
-                width: 60%;
+                width: 100%;
 
                 img {
-                    margin: 4rem auto 6rem !important;
+                    margin: 4rem auto 4rem !important;
                 }
             }
 
@@ -118,7 +118,7 @@
     }
 
     .catchup {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 500;
         text-align: center;
         margin: 5rem auto 7rem;

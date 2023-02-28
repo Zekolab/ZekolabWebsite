@@ -99,6 +99,10 @@
     display: none;
 }
 
+#scrollToContent .cta-with-icon a {
+    padding-left: 0 !important;
+  }
+
 .cta_container {
     color: #FFF;
     font-weight: 600;
@@ -106,9 +110,10 @@
     @include sm {
         display: flex;
         flex-direction: column;
+        align-items: center;
         row-gap: 2rem;
     }
-    a {
+    div {
         background-color: var(--dark-blue);
         padding: 2rem 2rem 2rem 6rem;
         border-radius: 5rem;
@@ -129,7 +134,7 @@
             left: 2rem;
         }
     }
-    a:first-child {
+    div:first-child {
         margin-right: 5rem;
         @include sm {
             margin: 0 auto;

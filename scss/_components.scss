@@ -12,7 +12,7 @@
         text-align: center;
         position: relative;
         display: inline-block;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
 
         &::before {
             content: "";
@@ -74,7 +74,7 @@
     img {
         position: absolute;
         left: 10rem;
-        width: 10rem;
+        width: 12rem;
         bottom: 0;
         transform: translateY(6px);
 
@@ -86,6 +86,101 @@
 
         @include xs {
             display: none;
+        }
+    }
+}
+
+// FEEDBACKS
+.feedbacks {
+    margin-top: 9rem;
+    margin-bottom: 10rem;
+
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @media only screen and (min-width:481px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    article {
+        width: 100%;
+        margin-top: 4rem;
+
+        box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .3);
+        border-radius: 2rem;
+        padding: 6rem 2rem 2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (min-width:481px) and (max-width: 767px) {
+            width: 45%;
+
+            &:last-child {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media only screen and (min-width:768px) {
+            width: 30%;
+            margin-top: 2rem;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+
+            width: 5rem;
+            height: 5rem;
+            background: transparent no-repeat url(../assets/SVG/quote.svg);
+            background-size: contain;
+
+            position: absolute;
+            top: -2.5rem;
+            left: 3rem;
+        }
+
+        img {
+            width: 6rem;
+            position: absolute;
+            top: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+        }
+
+        .brand {
+            &-name {
+                font-size: 2rem;
+                font-weight: 600;
+                padding-bottom: .5em;
+            }
+
+            &-desc {
+                color: var(--grey);
+                font-size: 1.4rem;
+                font-style: italic;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid var(--grey);
+            }
+
+            &-text {
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 3rem;
+                padding-top: 1.5rem;
+
+                @include md {
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                }
+            }
         }
     }
 }
@@ -104,8 +199,8 @@
             display: block;
             position: absolute;
 
-            width: 8rem;
-            height: 8rem;
+            width: 9rem;
+            height: 9rem;
             background: transparent url(../assets/3d/rocket.png) no-repeat center;
             background-size: contain;
             top: -10rem;
@@ -120,8 +215,8 @@
 
             @include xs {
                 left: 50%;
-                transform: translateX(-50%) scale(-1.1, 1.1);
-                top: -10rem;
+                transform: translateX(-50%) scale(-1.2, 1.2);
+                top: -11rem;
             }
         }
     }
@@ -235,6 +330,7 @@
 // LEGALS
 .legals {
     margin-top: 15rem;
+    padding-bottom: 5rem;
     .toc {
         display: flex;
         flex-direction: column;
