@@ -81,8 +81,8 @@
             li {
                 padding-left: 25px;
                 margin: 1.25rem 0;
-                // background-image: ;
-                background: url(../assets/SVG/icon_app-store.svg)  no-repeat left;
+                background: url(../assets/SVG/icon_app-store.svg)
+                no-repeat left;
             }
         }
         .cta {
@@ -98,7 +98,6 @@
         &.free {
             background-color: rgba($color: #FFF, $alpha: .65);
             border-radius: 2rem 0 0 2rem;
-            // max-width: 32%;
             padding: 2rem 3rem 2rem 2rem;
             .brand {
                 &::after {
