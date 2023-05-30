@@ -10,13 +10,13 @@ pricings.forEach(elt => {
             // console.log(elt.getAttribute('data-value'));
             switch (elt.getAttribute('data-value')) {
                 case '1' :
-                    elt.innerText = '49,99';
+                    changingPrice.innerText = '49,99';
                     break;
                 case '6' :
-                    elt.innerText = '269,99';
+                    changingPrice.innerText = '269,99';
                     break;
-                case '1' :
-                    elt.innerText = '499,99';
+                case '12' :
+                    changingPrice.innerText = '499,99';
                     break;
             }
         }

@@ -101,9 +101,11 @@
             li {
                 padding-left: 25px;
                 margin: 1.25rem 0;
-                background: url(../assets/SVG/icon_app-store.svg)
-                no-repeat left center;
-                background-size: 15px;
+                background: url(../assets/images/approve.png) no-repeat left center;
+                background-size: 20px;
+                &.negat {
+                    background-image: url(../assets/images/cross.png);
+                }
             }
         }
         .cta {
@@ -169,7 +171,7 @@
                     margin: 1.5rem 0 .5rem;
                     line-height: 5rem;
                 }
-                span {
+                span:not(.price_to_change) {
                     color: rgba($color: #FFF, $alpha: .75);
                 }
                 .euro {

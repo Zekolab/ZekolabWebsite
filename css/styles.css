@@ -1504,8 +1504,11 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .cards_container .card .pricing-features li {
   padding-left: 25px;
   margin: 1.25rem 0;
-  background: url(../assets/SVG/icon_app-store.svg) no-repeat left center;
-  background-size: 15px;
+  background: url(../assets/images/approve.png) no-repeat left center;
+  background-size: 20px;
+}
+.cards_container .card .pricing-features li.negat {
+  background-image: url(../assets/images/cross.png);
 }
 .cards_container .card .cta {
   color: var(--dark-blue);
@@ -1571,7 +1574,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     line-height: 5rem;
   }
 }
-.cards_container .card:not(.free) .formule span {
+.cards_container .card:not(.free) .formule span:not(.price_to_change) {
   color: rgba(255, 255, 255, 0.75);
 }
 .cards_container .card:not(.free) .formule .euro {
