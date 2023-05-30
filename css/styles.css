@@ -1389,6 +1389,143 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     transform: translateY(-20px);
   }
 }
+/* === HERO === */
+.hero.pricing {
+  padding-bottom: 7rem;
+  text-align: center;
+}
+.hero.pricing h1 {
+  margin-bottom: 3rem;
+}
+.hero.pricing p {
+  font-size: 2rem;
+  color: #FFF;
+}
+.hero.pricing .pricing_choices {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 40px;
+  margin: 4rem auto 0;
+  padding: 2px 3px;
+  width: fit-content;
+}
+.hero.pricing .pricing_choice {
+  padding: 10px 25px 11px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 100%;
+}
+.hero.pricing .pricing_choice.active {
+  background-color: #FFF;
+  color: var(--dark-blue);
+}
+.hero.pricing .pricing_choice .emoji {
+  font-size: 90%;
+}
+
+/* === CARDS === */
+.cards_container {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.cards_container .card {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+.cards_container .card .brand {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 2.4rem;
+  position: relative;
+}
+.cards_container .card .brand::after {
+  content: "basic";
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+}
+.cards_container .card .intro {
+  font-size: 1.6rem;
+  color: #ededed;
+  text-align: left;
+}
+.cards_container .card .formule {
+  margin: 1.5rem 0 1rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.cards_container .card .pricing-features {
+  text-align: left;
+}
+.cards_container .card .pricing-features li {
+  padding-left: 25px;
+  margin: 1.25rem 0;
+  background: url(../assets/SVG/icon_app-store.svg) no-repeat left;
+}
+.cards_container .card .cta {
+  color: var(--dark-blue);
+  background-color: #FFF;
+  border-radius: 25px;
+  font-weight: 700;
+  margin: 1rem auto;
+  width: 100%;
+  padding: 1.5rem 2rem;
+}
+.cards_container .card.free {
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 2rem 0 0 2rem;
+  height: fit-content;
+  max-width: 35%;
+  padding: 2rem 4rem 2rem 2rem;
+}
+.cards_container .card.free .brand::after {
+  content: "basic";
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: absolute;
+  right: -45px;
+  top: 0;
+}
+.cards_container .card.free .formule {
+  font-style: italic;
+}
+.cards_container .card:not(.free) {
+  background: linear-gradient(45deg, var(--red), #1800BC);
+  padding: 2rem;
+}
+.cards_container .card:not(.free) .formule {
+  margin: 3rem 0 2rem;
+  font-size: 5rem;
+  font-weight: 500;
+}
+.cards_container .card:not(.free) .formule span {
+  color: rgba(255, 255, 255, 0.75);
+}
+.cards_container .card:not(.free) .formule .euro {
+  font-size: 4rem;
+}
+.cards_container .card:not(.free) .formule .month {
+  font-size: 2rem;
+}
+.cards_container .card:not(.free) .pricing-features li {
+  margin: 2rem 0;
+}
+
 .full-page {
   height: 100vh;
   background: var(--mcol-gradient);
