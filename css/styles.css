@@ -1399,6 +1399,12 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .hero.pricing h1 {
   margin-bottom: 3rem;
 }
+@media (max-width: 480px) {
+  .hero.pricing h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
 .hero.pricing p {
   font-size: 2rem;
   color: #FFF;
@@ -1411,6 +1417,13 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   padding: 2px 3px;
   width: fit-content;
 }
+@media (max-width: 480px) {
+  .hero.pricing .pricing_choices {
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
+}
 .hero.pricing .pricing_choice {
   padding: 10px 25px 11px;
   border-radius: 30px;
@@ -1418,6 +1431,11 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   font-size: 1.8rem;
   font-weight: 600;
   height: 100%;
+}
+@media (max-width: 480px) {
+  .hero.pricing .pricing_choice {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
 }
 .hero.pricing .pricing_choice.active {
   background-color: #FFF;
@@ -1434,7 +1452,18 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   justify-content: center;
   align-items: center;
   margin: 6rem auto 0;
-  width: 70%;
+}
+@media (max-width: 767px) {
+  .cards_container {
+    flex-direction: column;
+    width: 75%;
+    row-gap: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .cards_container {
+    width: 100%;
+  }
 }
 .cards_container .card {
   border-radius: 2rem;
@@ -1475,7 +1504,8 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .cards_container .card .pricing-features li {
   padding-left: 25px;
   margin: 1.25rem 0;
-  background: url(../assets/SVG/icon_app-store.svg) no-repeat left;
+  background: url(../assets/SVG/icon_app-store.svg) no-repeat left center;
+  background-size: 15px;
 }
 .cards_container .card .cta {
   color: var(--dark-blue);
@@ -1490,6 +1520,16 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   background-color: rgba(255, 255, 255, 0.65);
   border-radius: 2rem 0 0 2rem;
   padding: 2rem 3rem 2rem 2rem;
+  height: 455px;
+  max-width: 330px;
+}
+@media (max-width: 767px) {
+  .cards_container .card.free {
+    border-radius: 2rem;
+    height: auto;
+    width: 100%;
+    max-width: none;
+  }
 }
 .cards_container .card.free .brand::after {
   content: "basic";
@@ -1501,6 +1541,15 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .cards_container .card:not(.free) {
   background: linear-gradient(45deg, var(--red), #1800BC);
   padding: 2rem;
+  height: 525px;
+  max-width: 450px;
+}
+@media (max-width: 767px) {
+  .cards_container .card:not(.free) {
+    height: auto;
+    width: 100%;
+    max-width: none;
+  }
 }
 .cards_container .card:not(.free) .brand::after {
   content: "PRO";
@@ -1516,6 +1565,12 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   font-size: 5rem;
   font-weight: 500;
 }
+@media (max-width: 767px) {
+  .cards_container .card:not(.free) .formule {
+    margin: 1.5rem 0 0.5rem;
+    line-height: 5rem;
+  }
+}
 .cards_container .card:not(.free) .formule span {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -1527,6 +1582,22 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 .cards_container .card:not(.free) .pricing-features li {
   margin: 3rem 0;
+}
+
+.pricing_promote {
+  padding: 5rem 0 4rem;
+}
+.pricing_promote .subtitle {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .pricing_promote .subtitle {
+    width: 100%;
+  }
 }
 
 .full-page {

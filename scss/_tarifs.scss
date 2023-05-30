@@ -4,6 +4,10 @@
     text-align: center;
     h1 {
         margin-bottom: 3rem;
+        @include xs {
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
     }
     p {
         font-size: 2rem;
@@ -17,6 +21,11 @@
             margin: 4rem auto 0;
             padding: 2px 3px;
             width: fit-content;
+            @include xs {
+                background-color: rgba($color: #FFF, $alpha: 0);
+                justify-content: space-evenly;
+                gap: 1.5rem;
+            }
         }
         &_choice {
             padding: 10px 25px 11px;
@@ -25,6 +34,9 @@
             font-size: 1.8rem;
             font-weight: 600;
             height: 100%;
+            @include xs {
+                background-color: rgba($color: #FFF, $alpha: .25);
+            }
             &.active {
                 background-color: #FFF;
                 color: var(--dark-blue);
@@ -43,7 +55,15 @@
     justify-content: center;
     align-items: center;
     margin: 6rem auto 0;
-    width: 70%;
+    // width: 70%;
+    @include sm {
+        flex-direction: column;
+        width: 75%;
+        row-gap: 3rem;
+    }
+    @include xs {
+        width: 100%;
+    }
     .card {
         border-radius: 2rem;
         display: flex;
@@ -82,7 +102,8 @@
                 padding-left: 25px;
                 margin: 1.25rem 0;
                 background: url(../assets/SVG/icon_app-store.svg)
-                no-repeat left;
+                no-repeat left center;
+                background-size: 15px;
             }
         }
         .cta {
@@ -99,6 +120,14 @@
             background-color: rgba($color: #FFF, $alpha: .65);
             border-radius: 2rem 0 0 2rem;
             padding: 2rem 3rem 2rem 2rem;
+            height: 455px;
+            max-width: 330px;
+            @include sm {
+                border-radius: 2rem;
+                height: auto;
+                width: 100%;
+                max-width: none;
+            }
             .brand {
                 &::after {
                     content: 'basic';
@@ -113,6 +142,13 @@
         &:not(.free) {
             background: linear-gradient(45deg, var(--red), #1800BC);
             padding: 2rem;
+            height: 525px;
+            max-width: 450px;
+            @include sm {
+                height: auto;
+                width: 100%;
+                max-width: none;
+            }
             .brand {
                 &::after {
                     content: 'PRO';
@@ -129,6 +165,10 @@
                 margin: 3rem 0 2rem;
                 font-size: 5rem;
                 font-weight: 500;
+                @include sm {
+                    margin: 1.5rem 0 .5rem;
+                    line-height: 5rem;
+                }
                 span {
                     color: rgba($color: #FFF, $alpha: .75);
                 }
@@ -144,6 +184,20 @@
                     margin: 3rem 0;
                 }
             }
+        }
+    }
+}
+
+.pricing_promote {
+    padding: 5rem 0 4rem;
+    .subtitle {
+        margin: 0 auto;
+        width: 75%;
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+        @include xs {
+            width: 100%;
         }
     }
 }
