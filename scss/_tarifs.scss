@@ -43,6 +43,7 @@
     justify-content: center;
     align-items: center;
     margin: 3rem auto 0;
+    width: 50%;
     .card {
         border-radius: 2rem;
         display: flex;
@@ -98,8 +99,8 @@
             background-color: rgba($color: #FFF, $alpha: .65);
             border-radius: 2rem 0 0 2rem;
             height: fit-content;
-            max-width: 32%;
-            padding: 2rem 4rem 2rem 2rem;
+            // max-width: 32%;
+            padding: 2rem 3rem 2rem 2rem;
             .brand {
                 &::after {
                     content: 'basic';
