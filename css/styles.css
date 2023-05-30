@@ -1391,6 +1391,10 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     transform: translateY(-20px);
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 /* === HERO === */
 .hero.pricing {
   padding-bottom: 7rem;
@@ -1601,6 +1605,17 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   .pricing_promote .subtitle {
     width: 100%;
   }
+}
+.pricing_promote .promote_cards {
+  display: flex;
+}
+.pricing_promote .promote_card {
+  background-color: #1800BC;
+  min-width: 350px;
+  height: 500px;
+}
+.pricing_promote .promote_card:not(:last-child) {
+  margin-right: 2rem;
 }
 
 .full-page {
