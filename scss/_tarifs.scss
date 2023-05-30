@@ -209,14 +209,21 @@ body {
     .promote {
         &_cards {
             display: flex;
+            margin: 5rem auto;
         }
         &_card {
-            background-color: #1800BC;
             min-width: 350px;
             height: 500px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+            border-radius: 2rem;
+            padding: 2rem;
             &:not(:last-child) {
                 margin-right: 2rem;
             }
         }
     }
+}
+
+main {
+    margin-bottom: 6rem;
 }
