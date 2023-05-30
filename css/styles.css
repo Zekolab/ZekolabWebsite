@@ -1431,8 +1431,8 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem auto 0;
-  width: 50%;
+  margin: 6rem auto 0;
+  width: 70%;
 }
 .cards_container .card {
   border-radius: 2rem;
@@ -1487,7 +1487,6 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .cards_container .card.free {
   background-color: rgba(255, 255, 255, 0.65);
   border-radius: 2rem 0 0 2rem;
-  height: fit-content;
   padding: 2rem 3rem 2rem 2rem;
 }
 .cards_container .card.free .brand::after {
