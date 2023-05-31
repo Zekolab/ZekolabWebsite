@@ -1,5 +1,5 @@
 const pricings = document.querySelectorAll('.pricing_choice');
-const changingPrice = document.querySelector('.price_to_change')
+const changingPrice = document.querySelector('#price_to_change')
 
 pricings.forEach(elt => {
     elt.addEventListener('click', () => {
@@ -10,13 +10,13 @@ pricings.forEach(elt => {
             // console.log(elt.getAttribute('data-value'));
             switch (elt.getAttribute('data-value')) {
                 case '1' :
-                    changingPrice.innerText = '49,99';
+                    changingPrice.innerHTML = '<span class="euro">€ </span>49,99 <span class="month">/ 1 mois</span>';
                     break;
                 case '6' :
-                    changingPrice.innerText = '269,99';
+                    changingPrice.innerHTML = '<span class="euro">€ </span>269,99 <span class="month">/ 6 mois</span>';
                     break;
                 case '12' :
-                    changingPrice.innerText = '499,99';
+                    changingPrice.innerHTML = '<span class="euro">€ </span>499,99 <span class="month">/ 12 mois</span>';
                     break;
             }
         }
