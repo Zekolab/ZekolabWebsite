@@ -39,8 +39,12 @@ requestAnimationFrame(raf);
 const section_promote = document.querySelector('.pricing_promote');
 let box_items = gsap.utils.toArray(".promote_card");
 
+console.log(- 100 * box_items.length);
+// console.log(-100 * (box_items.length - 1));
+// console.log(-100 * (box_items.length - 1));
+
 gsap.to(box_items, {
-  xPercent: -100 * (box_items.length - 2.5),
+  xPercent: -100 * (box_items.length - 0.75),
   ease: "sine.out",
   scrollTrigger: {
     trigger: section_promote,
