@@ -7,7 +7,6 @@ pricings.forEach(elt => {
         if (currentlyActive!==elt) {
             currentlyActive.classList.toggle("active");
             elt.classList.toggle("active");
-            // console.log(elt.getAttribute('data-value'));
             switch (elt.getAttribute('data-value')) {
                 case '1' :
                     changingPrice.innerHTML = '<span class="euro">€ </span>49,99 <span class="month">/ 1 mois</span>';
@@ -32,21 +31,22 @@ function raf(time) {
     lenis.raf(time);
     ScrollTrigger.update();
     requestAnimationFrame(raf);
+    // console.log(section_promote.offsetWidth);
 }
 
 requestAnimationFrame(raf);
 
-const section_2 = document.querySelector('.pricing_promote');
+const section_promote = document.querySelector('.pricing_promote');
 let box_items = gsap.utils.toArray(".promote_card");
 
 gsap.to(box_items, {
-  xPercent: -100 * (box_items.length - 3),
+  xPercent: -100 * (box_items.length - 2.5),
   ease: "sine.out",
   scrollTrigger: {
-    trigger: section_2,
+    trigger: section_promote,
     pin: true,
     scrub: 3,
     snap: 1 / (box_items.length - 1),
-    end: "+=" + section_2.offsetWidth
+    end: "+=" + section_promote.offsetWidth
   }
 });
