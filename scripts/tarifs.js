@@ -40,8 +40,6 @@ const section_promote = document.querySelector('.pricing_promote');
 let box_items = gsap.utils.toArray(".promote_card");
 
 console.log(- 100 * box_items.length);
-// console.log(-100 * (box_items.length - 1));
-// console.log(-100 * (box_items.length - 1));
 
 gsap.to(box_items, {
   xPercent: -100 * (box_items.length - 0.75),
@@ -49,7 +47,7 @@ gsap.to(box_items, {
   scrollTrigger: {
     trigger: section_promote,
     pin: true,
-    scrub: 3,
+    scrub: 5,
     snap: 1 / (box_items.length - 1),
     end: "+=" + section_promote.offsetWidth
   }
