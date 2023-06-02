@@ -1400,6 +1400,7 @@ body.price {
 .hero.pricing {
   padding-bottom: 7rem;
   text-align: center;
+  color: #FFF;
 }
 .hero.pricing h1 {
   margin-bottom: 3rem;
@@ -1412,7 +1413,6 @@ body.price {
 }
 .hero.pricing p {
   font-size: 2rem;
-  color: #FFF;
 }
 .hero.pricing .pricing_choices {
   align-items: center;
@@ -1551,6 +1551,29 @@ body.price {
   padding: 2rem;
   height: 525px;
   max-width: 450px;
+  position: relative;
+}
+.cards_container .card:not(.free) .discount {
+  position: absolute;
+  top: 2rem;
+  right: -3rem;
+  background-color: #FFF;
+  color: #ec4651;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 4rem;
+  border: 2px solid var(--red);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .cards_container .card:not(.free) .discount {
+    right: 2rem;
+    top: 0;
+    transform: translateY(-25%);
+  }
 }
 @media (max-width: 767px) {
   .cards_container .card:not(.free) {
