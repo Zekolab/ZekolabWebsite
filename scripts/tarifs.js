@@ -50,8 +50,8 @@ gsap.to(box_items, {
   ease: "sine.out",
   scrollTrigger: {
     trigger: section_promote,
-    pin: true,
-    scrub: 5,
+    pin: '.pricing_promote',
+    scrub: 1,
     snap: 1 / (box_items.length - 1),
     end: "+=" + section_promote.offsetWidth
   }
