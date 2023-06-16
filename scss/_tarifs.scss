@@ -125,6 +125,11 @@ body.price {
             width: 100%;
             padding: 1.5rem 2rem;
         }
+        &_details {
+            margin: 0 auto;
+            font-size: 1.4rem !important;
+            color: #ececec;
+        }
         // Free card
         &.free {
             background-color: rgba($color: #FFF, $alpha: .65);
