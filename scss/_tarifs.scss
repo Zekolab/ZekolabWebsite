@@ -242,20 +242,21 @@ body.price {
             min-width: 300px;
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
             border-radius: 2rem;
-            padding: 4rem 2rem 2rem;
+            padding: 6rem 2rem 4rem;
             position: relative;
             text-align: center;
             &:not(:last-child) {
                 margin-right: 2rem;
             }
             img {
-                width: 6rem;
+                width: 8rem;
                 position: absolute;
                 top: 0;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
             .card_subtitle {
+                font-size: 1.8rem;
                 font-weight: 600;
                 margin-bottom: 1.6rem;
             }
